@@ -35,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, myStringCollection);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//                R.array.planets_array, android.R.layout.simple_list_item_1);
 
-        ListView listView = findViewById(R.id.listview1);
+                ListView listView = findViewById(R.id.listview1);
         listView.setAdapter(adapter);
 
         FloatingActionButton fab = findViewById(R.id.fab);
